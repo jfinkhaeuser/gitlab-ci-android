@@ -1,12 +1,11 @@
 #
-# GitLab CI: Android v0.3
+# GitLab CI: Android+NDK
 #
-# https://hub.docker.com/r/jangrewe/gitlab-ci-android/
-# https://git.faked.org/jan/gitlab-ci-android
+# https://hub.docker.com/r/jfinkhaeuser/gitlab-ci-android-ndk/
 #
 
 FROM ubuntu:18.04
-MAINTAINER Jan Grewe <jan@faked.org>
+MAINTAINER Jens Finkhaeuser <jens@finkhaeuser.de>
 
 ENV VERSION_TOOLS "6200805"
 
