@@ -1,5 +1,7 @@
-# gitlab-ci-android
+# gitlab-ci-android-ndk
 This Docker image contains the Android SDK and most common packages necessary for building Android apps in a CI tool like GitLab CI. Make sure your CI environment's caching works as expected, this greatly improves the build time, especially if you use multiple build jobs.
+
+*Note:* The only difference to the upstream repo is/should be the addition of `ndk-bundle`.
 
 A `.gitlab-ci.yml` with caching of your project's dependencies would look like this:
 
