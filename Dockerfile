@@ -7,7 +7,7 @@
 FROM ubuntu:18.04
 MAINTAINER Jens Finkhaeuser <jens@finkhaeuser.de>
 
-ENV VERSION_TOOLS "6200805"
+ENV VERSION_TOOLS "6609375"
 
 ENV ANDROID_SDK_ROOT "/sdk"
 # Keep alias for compatibility
