@@ -4,7 +4,7 @@
 # https://hub.docker.com/r/jfinkhaeuser/gitlab-ci-android-ndk/
 #
 
-FROM ubuntu:18.04
+FROM ubuntu:20.04
 MAINTAINER Jens Finkhaeuser <jens@finkhaeuser.de>
 
 ENV VERSION_TOOLS "6609375"
