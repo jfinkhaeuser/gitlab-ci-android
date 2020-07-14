@@ -4,8 +4,8 @@
 # https://hub.docker.com/r/jfinkhaeuser/gitlab-ci-android-ndk/
 #
 
-FROM ubuntu:20.04
-MAINTAINER Jens Finkhaeuser <jens@finkhaeuser.de>
+FROM jfinkhaeuser/gitlab-ci-cpp-meson:latest
+LABEL maintainer="Jens Finkhaeuser <jens@finkhaeuser.de>"
 
 ENV VERSION_TOOLS "6609375"
 
@@ -21,11 +21,11 @@ RUN apt-get -qq update \
       curl \
       git-core \
       html2text \
-      openjdk-8-jdk \
+      openjdk-14-jdk \
       libc6-i386 \
       lib32stdc++6 \
       lib32gcc1 \
-      lib32ncurses5 \
+      lib32ncurses6 \
       lib32z1 \
       unzip \
       locales \
