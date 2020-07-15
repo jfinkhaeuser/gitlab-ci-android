@@ -53,3 +53,13 @@ RUN mkdir -p /root/.android \
 
 RUN while read -r package; do PACKAGES="${PACKAGES}${package} "; done < /sdk/packages.txt \
  && ${ANDROID_SDK_ROOT}/cmdline-tools/tools/bin/sdkmanager --sdk_root=${ANDROID_SDK_ROOT} ${PACKAGES}
+
+# meson cross-files for Android NDK
+RUN mkdir -p /meson/scripts \
+  && mkdir -p /meson/cross-files \
+  && cd /meson/scripts/ \
+  && pip3 install semver
+
+ADD android.py /meson/scripts/
+RUN cd /meson/cross-files \
+  && python3 /meson/scripts/android.py
